@@ -1,0 +1,44 @@
+.sponsors {
+	clear: both;
+
+	@include respond(desktop) {
+		padding-top: 100px;
+	}
+
+	ul {
+		@include clearfix;
+		@include divide_width();
+		list-style: none;
+		margin: 0;
+		li {
+			box-sizing: border-box;
+			display: inline-block;
+			float: left;
+			text-align: center;
+
+			a {
+				display: block;
+				@include vertical-align('.center', 130px)
+			}
+
+			&:first-child {
+				text-align: left;
+				margin-left: 0;
+			}
+
+
+			&:last-child {
+				text-align: right;
+			}
+
+			img {
+				max-width: 99%;
+				box-shadow: none;
+				border: 0;
+				max-height: 130px;
+				vertical-align: bottom;
+			}
+
+		}
+	}
+}

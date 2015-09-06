@@ -1,1 +1,2 @@
-A Larp convention website.
+# Medusa
+Prototype port of the medusa larp site to silverstripe

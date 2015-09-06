@@ -1,0 +1,61 @@
+.warning h1 {
+	font-family: arial, sans-serif;
+}
+
+.js .js-hide,
+.js .js-hide-input input {
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+.showOnClick a {
+	position:relative;
+	padding-left:20px;
+
+	&:before{
+		content: '+';
+		position:absolute;
+		left:0;
+		width:20px;
+		height:20px;
+	}
+}
+
+.row.content {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.feature-group {
+	margin-bottom:30px;
+}
+
+.content.subhead {
+	padding-bottom: 10px;
+}
+
+.clear-filter {
+	transition-duration: 0.3s;
+	display: inline-block;
+	font-size: 0.5em;
+	font-weight: normal;
+	font-family: sans-serif;
+	padding: 0 5px;
+	opacity: 1;
+
+	&.default {
+		transition-duration: 0.3s;
+		opacity: 0;
+	}
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+	i {
+		margin: 0;
+	}
+}

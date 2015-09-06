@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72b7c94eb9281980bfd2d20d24b3c669",
+    "hash": "aae08a09b8789774c43347c4bea45ecd",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -83,7 +83,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/4855ac5ec0493519961666adbc98c6dd4988c8f4",
+                "url": "https://api.github.com/repos/ajshort/silverstripe-gridfieldextensions/zipball/302f7c0dc1ca929d7aa001453eaa16491afd4d5b",
                 "reference": "4855ac5ec0493519961666adbc98c6dd4988c8f4",
                 "shasum": ""
             },
@@ -187,7 +187,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/fadc14257fa015b3e07f4d64710ea02f99356ccd",
+                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
                 "reference": "fadc14257fa015b3e07f4d64710ea02f99356ccd",
                 "shasum": ""
             },
@@ -273,6 +273,94 @@
             "time": "2015-02-12 22:23:32"
         },
         {
+            "name": "embed/embed",
+            "version": "v2.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oscarotero/Embed.git",
+                "reference": "75736ec8928e1d27929105ef9902a08d52ec5b34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/75736ec8928e1d27929105ef9902a08d52ec5b34",
+                "reference": "75736ec8928e1d27929105ef9902a08d52ec5b34",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Embed\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+            "homepage": "https://github.com/oscarotero/Embed",
+            "keywords": [
+                "embed",
+                "embedly",
+                "oembed",
+                "opengraph",
+                "twitter cards"
+            ],
+            "time": "2015-06-27 17:19:54"
+        },
+        {
+            "name": "froog/silvergraph",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/froog/SilverGraph.git",
+                "reference": "87af04643d7f9e020f7066bac426fcbae31bf2c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/froog/SilverGraph/zipball/20526451b113a2d7bc3c5a811235476ea0950ef6",
+                "reference": "87af04643d7f9e020f7066bac426fcbae31bf2c1",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.0",
+                "silverstripe/framework": "~3.0"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Pickering",
+                    "email": "froogalicious@gmail.com"
+                }
+            ],
+            "description": "Generates data model visualisations from SilverSripe DataObjects, displaying database fields, relations and ancestry",
+            "keywords": [
+                "cms",
+                "member",
+                "permissions",
+                "silverstripe"
+            ],
+            "time": "2015-04-22 18:45:40"
+        },
+        {
             "name": "jonom/silverstripe-betternavigator",
             "version": "dev-master",
             "source": {
@@ -282,7 +370,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/fdd895ef9de0ed88b0a27c8feae2ec6428b73b86",
+                "url": "https://api.github.com/repos/jonom/silverstripe-betternavigator/zipball/4f92851547c03fd0993586596c5d460e4e2a38c3",
                 "reference": "fdd895ef9de0ed88b0a27c8feae2ec6428b73b86",
                 "shasum": ""
             },
@@ -352,6 +440,54 @@
             "time": "2013-08-25 20:49:47"
         },
         {
+            "name": "sheadawson/silverstripe-linkable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sheadawson/silverstripe-linkable.git",
+                "reference": "ad7611caf16d57dddb1ac09da1cf02f53bb81221"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/ad7611caf16d57dddb1ac09da1cf02f53bb81221",
+                "reference": "ad7611caf16d57dddb1ac09da1cf02f53bb81221",
+                "shasum": ""
+            },
+            "require": {
+                "embed/embed": "~2.2.2",
+                "php": ">=5.3.2",
+                "silverstripe/cms": "3.*",
+                "silverstripe/framework": "3.*",
+                "unclecheese/display-logic": "1.2.*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "linkable"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Nyeholt",
+                    "email": "marcus@silverstripe.com.au"
+                },
+                {
+                    "name": "Shea Dawson",
+                    "email": "shea@silverstripe.com.au"
+                }
+            ],
+            "description": "A couple of handy form fields and objects for managing external and internal links on DataObjects",
+            "homepage": "http://github.com/sheadawson/silverstripe-linkable",
+            "keywords": [
+                "cms",
+                "link",
+                "silverstripe"
+            ],
+            "time": "2015-08-31 20:46:01"
+        },
+        {
             "name": "silverstripe/cms",
             "version": "3.1.9",
             "source": {
@@ -408,7 +544,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/9eef4895a4585f67aeceee43e89036f31670ac02",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/66cfebb9d04a988b52a5264b78f2799ff5a6803f",
                 "reference": "9eef4895a4585f67aeceee43e89036f31670ac02",
                 "shasum": ""
             },
@@ -857,7 +993,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/99ac1a3e20f60dc226e7b7166afd1ad81b7b06c3",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/d53a66353b3f19c8f4d1ce701b38fecebd0c7170",
                 "reference": "99ac1a3e20f60dc226e7b7166afd1ad81b7b06c3",
                 "shasum": ""
             },
@@ -901,7 +1037,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/b78f3c7449651ba2acefe4000f161e17384fcad3",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/15fad37bc42ea50a6c57dc6a40ae66a28d81c028",
                 "reference": "b78f3c7449651ba2acefe4000f161e17384fcad3",
                 "shasum": ""
             },
@@ -926,6 +1062,50 @@
                 "silverstripe"
             ],
             "time": "2015-02-09 02:07:59"
+        },
+        {
+            "name": "unclecheese/display-logic",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-display-logic.git",
+                "reference": "7f186c1405172958b2e8ed5e4322a04d8133ca69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-display-logic/zipball/7f186c1405172958b2e8ed5e4322a04d8133ca69",
+                "reference": "7f186c1405172958b2e8ed5e4322a04d8133ca69",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "3.*"
+            },
+            "replace": {
+                "silverstripe/display-logic": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "display_logic"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com"
+                }
+            ],
+            "description": "Allows assignment of conditions for display and hide of specific form fields based on client side behavior.",
+            "keywords": [
+                "Forms",
+                "cms",
+                "display",
+                "logic",
+                "silverstripe"
+            ],
+            "time": "2015-01-29 23:35:48"
         }
     ],
     "packages-dev": [],
@@ -940,8 +1120,11 @@
         "silverstripe/userforms": 20,
         "silverstripe/standardsediting": 20,
         "jonom/silverstripe-betternavigator": 20,
-        "adrexia/dashboardmods": 20
+        "adrexia/dashboardmods": 20,
+        "sheadawson/silverstripe-linkable": 20
     },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
