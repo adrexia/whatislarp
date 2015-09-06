@@ -3,13 +3,15 @@
 	// copes with 5 preferences maximum
 
 	.preference-group .field {
+		font-size: 1.1em;
+		transition: 0.3s;
 		position: relative;
 		float: left;
-		cursor: move; 
-		background: rgba(lighten($global-bg-color, 10%),0.5);
-		border: 0px solid lighten($global-bg-color, 12%);
+		cursor: move;
+		background: darken($global-bg-color, 10%);
+		border: 0px solid darken($global-bg-color, 10%);
 		border-left-width: 19px;
-		color: #fff;
+		color: darken($global-bg-color, 60%);
 		margin: 0;
 		margin-bottom: 1px;
 		padding: 5px 50px 5px 40px;
@@ -18,7 +20,7 @@
 			border-left-width: 5px;
 		}
 		&.favourite .icon-heart {
-			color: $passion;
+			color: $inspiration;
 		}
 		&:first-child {
 			.icon-up {
@@ -34,36 +36,46 @@
 			}
 		}
 		&:hover, &:focus {
-			background: lighten($global-bg-color, 10%);
-			border-color: $earth;
+			transition: 0.3s;
+			background: $default-color;
+			border-color: $default-color;
+			color: #fff;
 			.icon {
 				color: $earth;
 			}
-			// .icon-heart {
-			// 	color: $passion;
-			// }
 			&.favourite .icon-heart {
-				color: $passion;
+				color: $inspiration;
+			}
+			&:before {
+				transition: 0.3s;
+				background: $default-color;
+				color: #fff;
+			}
+			&:after {
+				transition: 0.3s;
+				color: #fff;
+				opacity: 1;
 			}
 		}
 		&:before {
 			box-sizing: border-box;
 			display: block;
 			padding: 5px 10px;
-			background-color: lighten($global-bg-color, 7%);
+			background-color: darken($global-bg-color, 10%);
 			height: 100%;
 			content: "";
 			position: absolute;
 			top: 0px;
 			left: 0px;
 			width: 30px;
-			color: rgba(#fff, 0.7);
+			color: darken($global-bg-color, 50%);
 			font-weight: normal;
 		}
 		&:after {
 			@include rotate(-45deg);
 			content: "\e744";
 			font-family: "#{$icons}";
+			color: darken($default-color, 5%);
 			position:absolute;
 			text-decoration:none;
 			zoom: 1;
@@ -79,7 +91,8 @@
 			right: 5px;
 			top: 5px;
 			padding-left: 22px;
-			color: rgba(lighten($earth, 50%), 0.5);
+			color: rgba($earth, 0.5);
+
 			&:hover {
 				color: lighten($earth, 3%);
 				cursor: pointer;
@@ -87,7 +100,7 @@
 		}
 		.icon-heart {
 			display: none;
-			color: rgba(lighten($passion, 20%), 0.5);
+			color: rgba($passion, 0.4);
 		}
 		.extra {
 			text-overflow: ellipsis;
@@ -98,16 +111,31 @@
 		.preference-#{$i} {
 			@for $j from 1 through $i {
 				.field:nth-of-type(#{$j}) {
-					border-color: $earth;
+					border-color: $default-color;
 					&:before {
 						content: "#{$j}";
+					}
+					&:hover,
+					&:focus {
+						border-color: $default-color;
+
+					}
+					&:after {
+						color: #fff;
 					}
 				}
 				// if follows after not-playing, style as unselected
 				.not-playing ~ .field:nth-of-type(#{$j}) {
-					border-color: lighten($global-bg-color, 12%);
+					border-color: darken($global-bg-color, 10%);
+					&:hover,
+					&:focus {
+						border-color: $default-color;
+					}
 					&:before {
 						content: "";
+					}
+					&:after {
+						color: darken($default-color, 5%);
 					}
 				}
 			}
@@ -117,10 +145,9 @@
 
 .preference-table {
 	.icon-heart {
-		color: $passion;
+		color: $inspiration;
 	}
 	.icon-check {
 		color: $earth;
 	}
 }
-

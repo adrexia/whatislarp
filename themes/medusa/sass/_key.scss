@@ -7,9 +7,9 @@
 	margin-bottom: 30px;
 	width: 100%;
 	display: block;
-	background-color: $navbar-color;
+	background-color: darken($global-bg-color, 5%);
 	.icon-heart {
-		color: $passion;
+		color: $inspiration;
 	}
 	.icon-check {
 		color: $earth;

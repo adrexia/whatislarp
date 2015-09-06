@@ -10,6 +10,10 @@
 	}
 }
 
+.btn {
+	font-family: $font-family;
+}
+
 .btn-login {
 	background-color: darken($navbar-color, 5%);
 	text-align: left;

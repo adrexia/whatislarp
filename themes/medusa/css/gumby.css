@@ -2078,6 +2078,8 @@ form fieldset legend { padding: 5px 10px; }
 .success.btn:hover, .Actions .btn:hover { color: #fff; }
 .success.btn:hover a, .Actions .btn:hover a { color: #fff; }
 
+.btn { font-family: "Fanwood Text", georgia, serif; }
+
 .btn-login { background-color: #005a39; text-align: left; margin-top: -20px; padding: 9px 16px 9px; position: relative; z-index: 3; line-height: 13px; }
 @media only screen and (min-width: 1150px) { .btn-login { background-color: #005a39; margin-top: -80px; padding: 9px 10px; } }
 @media only screen and (max-width: 900px) { .btn-login { background: none; float: left; margin-top: -80px; margin-left: -20px; padding: 10px 10px; } }
@@ -2100,6 +2102,7 @@ form fieldset legend { padding: 5px 10px; }
 
 .navbar { font-family: "Quattrocento", georgia, serif; text-transform: uppercase; z-index: 3; }
 @media only screen and (min-width: 900px) { .navbar ul { padding-left: 80px; } }
+@media only screen and (min-width: 1150px) { .navbar ul { padding-left: 30px; } }
 @media only screen and (min-width: 1250px) { .navbar ul { padding-left: 0; } }
 .navbar ul li { display: inline-block; height: auto; float: left; }
 @media only screen and (max-width: 900px) { .navbar ul li { min-height: 0; } }
@@ -2306,92 +2309,154 @@ label.checkbox { float: left; margin-top: 0; padding-right: 30px; }
 .ui-autocomplete { max-width: 40%; }
 .ui-autocomplete li { background: #de347f; border-radius: 3px; color: #fff; display: block; display: inline-block; float: left; font-size: 13px; font-weight: bold; line-height: 25px; margin: 15px 5px 3px 0; padding: 0 10px; text-decoration: none; }
 
-.js .preference-select .preference-group .field { position: relative; float: left; cursor: move; background: rgba(240, 249, 230, 0.5); border: 0px solid #f5fbef; border-left-width: 19px; color: #fff; margin: 0; margin-bottom: 1px; padding: 5px 50px 5px 40px; }
+.js .preference-select .preference-group .field { font-size: 1.1em; transition: 0.3s; position: relative; float: left; cursor: move; background: #bde396; border: 0px solid #bde396; border-left-width: 19px; color: #3d6119; margin: 0; margin-bottom: 1px; padding: 5px 50px 5px 40px; }
 @media only screen and (max-width: 899px) { .js .preference-select .preference-group .field { border-left-width: 5px; } }
-.js .preference-select .preference-group .field.favourite .icon-heart { color: #f15051; }
+.js .preference-select .preference-group .field.favourite .icon-heart { color: #de347f; }
 .js .preference-select .preference-group .field:first-child .icon-up { display: none; }
 .js .preference-select .preference-group .field:first-child .icon-heart { display: block; }
 .js .preference-select .preference-group .field:first-child.not-playing .icon-heart { display: none; }
-.js .preference-select .preference-group .field:hover, .js .preference-select .preference-group .field:focus { background: #f0f9e6; border-color: #007349; }
+.js .preference-select .preference-group .field:hover, .js .preference-select .preference-group .field:focus { transition: 0.3s; background: #7dc634; border-color: #7dc634; color: #fff; }
 .js .preference-select .preference-group .field:hover .icon, .js .preference-select .preference-group .field:focus .icon { color: #007349; }
-.js .preference-select .preference-group .field:hover.favourite .icon-heart, .js .preference-select .preference-group .field:focus.favourite .icon-heart { color: #f15051; }
-.js .preference-select .preference-group .field:before { box-sizing: border-box; display: block; padding: 5px 10px; background-color: #e8f5da; height: 100%; content: ""; position: absolute; top: 0px; left: 0px; width: 30px; color: rgba(255, 255, 255, 0.7); font-weight: normal; }
-.js .preference-select .preference-group .field:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); content: "\e744"; font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; left: -17px; top: 5px; opacity: 0.5; }
+.js .preference-select .preference-group .field:hover.favourite .icon-heart, .js .preference-select .preference-group .field:focus.favourite .icon-heart { color: #de347f; }
+.js .preference-select .preference-group .field:hover:before, .js .preference-select .preference-group .field:focus:before { transition: 0.3s; background: #7dc634; color: #fff; }
+.js .preference-select .preference-group .field:hover:after, .js .preference-select .preference-group .field:focus:after { transition: 0.3s; color: #fff; opacity: 1; }
+.js .preference-select .preference-group .field:before { box-sizing: border-box; display: block; padding: 5px 10px; background-color: #bde396; height: 100%; content: ""; position: absolute; top: 0px; left: 0px; width: 30px; color: #578924; font-weight: normal; }
+.js .preference-select .preference-group .field:after { -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); content: "\e744"; font-family: "entypo"; color: #70b22e; position: absolute; text-decoration: none; zoom: 1; left: -17px; top: 5px; opacity: 0.5; }
 @media only screen and (max-width: 899px) { .js .preference-select .preference-group .field:after { content: ""; } }
-.js .preference-select .preference-group .field .icon { position: absolute; right: 5px; top: 5px; padding-left: 22px; color: rgba(115, 255, 204, 0.5); }
+.js .preference-select .preference-group .field .icon { position: absolute; right: 5px; top: 5px; padding-left: 22px; color: rgba(0, 115, 73, 0.5); }
 .js .preference-select .preference-group .field .icon:hover { color: #008253; cursor: pointer; }
-.js .preference-select .preference-group .field .icon-heart { display: none; color: rgba(249, 174, 175, 0.5); }
+.js .preference-select .preference-group .field .icon-heart { display: none; color: rgba(241, 80, 81, 0.4); }
 .js .preference-select .preference-group .field .extra { text-overflow: ellipsis; }
-.js .preference-select .preference-1 .field:nth-of-type(1) { border-color: #007349; }
+.js .preference-select .preference-1 .field:nth-of-type(1) { border-color: #7dc634; }
 .js .preference-select .preference-1 .field:nth-of-type(1):before { content: "1"; }
-.js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1) { border-color: #f5fbef; }
+.js .preference-select .preference-1 .field:nth-of-type(1):hover, .js .preference-select .preference-1 .field:nth-of-type(1):focus { border-color: #7dc634; }
+.js .preference-select .preference-1 .field:nth-of-type(1):after { color: #fff; }
+.js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1) { border-color: #bde396; }
+.js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1):hover, .js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1):focus { border-color: #7dc634; }
 .js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1):before { content: ""; }
-.js .preference-select .preference-2 .field:nth-of-type(1) { border-color: #007349; }
+.js .preference-select .preference-1 .not-playing ~ .field:nth-of-type(1):after { color: #70b22e; }
+.js .preference-select .preference-2 .field:nth-of-type(1) { border-color: #7dc634; }
 .js .preference-select .preference-2 .field:nth-of-type(1):before { content: "1"; }
-.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1) { border-color: #f5fbef; }
+.js .preference-select .preference-2 .field:nth-of-type(1):hover, .js .preference-select .preference-2 .field:nth-of-type(1):focus { border-color: #7dc634; }
+.js .preference-select .preference-2 .field:nth-of-type(1):after { color: #fff; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1) { border-color: #bde396; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1):hover, .js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1):focus { border-color: #7dc634; }
 .js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1):before { content: ""; }
-.js .preference-select .preference-2 .field:nth-of-type(2) { border-color: #007349; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(1):after { color: #70b22e; }
+.js .preference-select .preference-2 .field:nth-of-type(2) { border-color: #7dc634; }
 .js .preference-select .preference-2 .field:nth-of-type(2):before { content: "2"; }
-.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2) { border-color: #f5fbef; }
+.js .preference-select .preference-2 .field:nth-of-type(2):hover, .js .preference-select .preference-2 .field:nth-of-type(2):focus { border-color: #7dc634; }
+.js .preference-select .preference-2 .field:nth-of-type(2):after { color: #fff; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2) { border-color: #bde396; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2):hover, .js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2):focus { border-color: #7dc634; }
 .js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2):before { content: ""; }
-.js .preference-select .preference-3 .field:nth-of-type(1) { border-color: #007349; }
+.js .preference-select .preference-2 .not-playing ~ .field:nth-of-type(2):after { color: #70b22e; }
+.js .preference-select .preference-3 .field:nth-of-type(1) { border-color: #7dc634; }
 .js .preference-select .preference-3 .field:nth-of-type(1):before { content: "1"; }
-.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1) { border-color: #f5fbef; }
+.js .preference-select .preference-3 .field:nth-of-type(1):hover, .js .preference-select .preference-3 .field:nth-of-type(1):focus { border-color: #7dc634; }
+.js .preference-select .preference-3 .field:nth-of-type(1):after { color: #fff; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1) { border-color: #bde396; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1):hover, .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1):focus { border-color: #7dc634; }
 .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1):before { content: ""; }
-.js .preference-select .preference-3 .field:nth-of-type(2) { border-color: #007349; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(1):after { color: #70b22e; }
+.js .preference-select .preference-3 .field:nth-of-type(2) { border-color: #7dc634; }
 .js .preference-select .preference-3 .field:nth-of-type(2):before { content: "2"; }
-.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2) { border-color: #f5fbef; }
+.js .preference-select .preference-3 .field:nth-of-type(2):hover, .js .preference-select .preference-3 .field:nth-of-type(2):focus { border-color: #7dc634; }
+.js .preference-select .preference-3 .field:nth-of-type(2):after { color: #fff; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2) { border-color: #bde396; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2):hover, .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2):focus { border-color: #7dc634; }
 .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2):before { content: ""; }
-.js .preference-select .preference-3 .field:nth-of-type(3) { border-color: #007349; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(2):after { color: #70b22e; }
+.js .preference-select .preference-3 .field:nth-of-type(3) { border-color: #7dc634; }
 .js .preference-select .preference-3 .field:nth-of-type(3):before { content: "3"; }
-.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3) { border-color: #f5fbef; }
+.js .preference-select .preference-3 .field:nth-of-type(3):hover, .js .preference-select .preference-3 .field:nth-of-type(3):focus { border-color: #7dc634; }
+.js .preference-select .preference-3 .field:nth-of-type(3):after { color: #fff; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3) { border-color: #bde396; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3):hover, .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3):focus { border-color: #7dc634; }
 .js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3):before { content: ""; }
-.js .preference-select .preference-4 .field:nth-of-type(1) { border-color: #007349; }
+.js .preference-select .preference-3 .not-playing ~ .field:nth-of-type(3):after { color: #70b22e; }
+.js .preference-select .preference-4 .field:nth-of-type(1) { border-color: #7dc634; }
 .js .preference-select .preference-4 .field:nth-of-type(1):before { content: "1"; }
-.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1) { border-color: #f5fbef; }
+.js .preference-select .preference-4 .field:nth-of-type(1):hover, .js .preference-select .preference-4 .field:nth-of-type(1):focus { border-color: #7dc634; }
+.js .preference-select .preference-4 .field:nth-of-type(1):after { color: #fff; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1) { border-color: #bde396; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1):hover, .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1):focus { border-color: #7dc634; }
 .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1):before { content: ""; }
-.js .preference-select .preference-4 .field:nth-of-type(2) { border-color: #007349; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(1):after { color: #70b22e; }
+.js .preference-select .preference-4 .field:nth-of-type(2) { border-color: #7dc634; }
 .js .preference-select .preference-4 .field:nth-of-type(2):before { content: "2"; }
-.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2) { border-color: #f5fbef; }
+.js .preference-select .preference-4 .field:nth-of-type(2):hover, .js .preference-select .preference-4 .field:nth-of-type(2):focus { border-color: #7dc634; }
+.js .preference-select .preference-4 .field:nth-of-type(2):after { color: #fff; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2) { border-color: #bde396; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2):hover, .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2):focus { border-color: #7dc634; }
 .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2):before { content: ""; }
-.js .preference-select .preference-4 .field:nth-of-type(3) { border-color: #007349; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(2):after { color: #70b22e; }
+.js .preference-select .preference-4 .field:nth-of-type(3) { border-color: #7dc634; }
 .js .preference-select .preference-4 .field:nth-of-type(3):before { content: "3"; }
-.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3) { border-color: #f5fbef; }
+.js .preference-select .preference-4 .field:nth-of-type(3):hover, .js .preference-select .preference-4 .field:nth-of-type(3):focus { border-color: #7dc634; }
+.js .preference-select .preference-4 .field:nth-of-type(3):after { color: #fff; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3) { border-color: #bde396; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3):hover, .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3):focus { border-color: #7dc634; }
 .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3):before { content: ""; }
-.js .preference-select .preference-4 .field:nth-of-type(4) { border-color: #007349; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(3):after { color: #70b22e; }
+.js .preference-select .preference-4 .field:nth-of-type(4) { border-color: #7dc634; }
 .js .preference-select .preference-4 .field:nth-of-type(4):before { content: "4"; }
-.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4) { border-color: #f5fbef; }
+.js .preference-select .preference-4 .field:nth-of-type(4):hover, .js .preference-select .preference-4 .field:nth-of-type(4):focus { border-color: #7dc634; }
+.js .preference-select .preference-4 .field:nth-of-type(4):after { color: #fff; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4) { border-color: #bde396; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4):hover, .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4):focus { border-color: #7dc634; }
 .js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4):before { content: ""; }
-.js .preference-select .preference-5 .field:nth-of-type(1) { border-color: #007349; }
+.js .preference-select .preference-4 .not-playing ~ .field:nth-of-type(4):after { color: #70b22e; }
+.js .preference-select .preference-5 .field:nth-of-type(1) { border-color: #7dc634; }
 .js .preference-select .preference-5 .field:nth-of-type(1):before { content: "1"; }
-.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1) { border-color: #f5fbef; }
+.js .preference-select .preference-5 .field:nth-of-type(1):hover, .js .preference-select .preference-5 .field:nth-of-type(1):focus { border-color: #7dc634; }
+.js .preference-select .preference-5 .field:nth-of-type(1):after { color: #fff; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1) { border-color: #bde396; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1):hover, .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1):focus { border-color: #7dc634; }
 .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1):before { content: ""; }
-.js .preference-select .preference-5 .field:nth-of-type(2) { border-color: #007349; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(1):after { color: #70b22e; }
+.js .preference-select .preference-5 .field:nth-of-type(2) { border-color: #7dc634; }
 .js .preference-select .preference-5 .field:nth-of-type(2):before { content: "2"; }
-.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2) { border-color: #f5fbef; }
+.js .preference-select .preference-5 .field:nth-of-type(2):hover, .js .preference-select .preference-5 .field:nth-of-type(2):focus { border-color: #7dc634; }
+.js .preference-select .preference-5 .field:nth-of-type(2):after { color: #fff; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2) { border-color: #bde396; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2):hover, .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2):focus { border-color: #7dc634; }
 .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2):before { content: ""; }
-.js .preference-select .preference-5 .field:nth-of-type(3) { border-color: #007349; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(2):after { color: #70b22e; }
+.js .preference-select .preference-5 .field:nth-of-type(3) { border-color: #7dc634; }
 .js .preference-select .preference-5 .field:nth-of-type(3):before { content: "3"; }
-.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3) { border-color: #f5fbef; }
+.js .preference-select .preference-5 .field:nth-of-type(3):hover, .js .preference-select .preference-5 .field:nth-of-type(3):focus { border-color: #7dc634; }
+.js .preference-select .preference-5 .field:nth-of-type(3):after { color: #fff; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3) { border-color: #bde396; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3):hover, .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3):focus { border-color: #7dc634; }
 .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3):before { content: ""; }
-.js .preference-select .preference-5 .field:nth-of-type(4) { border-color: #007349; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(3):after { color: #70b22e; }
+.js .preference-select .preference-5 .field:nth-of-type(4) { border-color: #7dc634; }
 .js .preference-select .preference-5 .field:nth-of-type(4):before { content: "4"; }
-.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4) { border-color: #f5fbef; }
+.js .preference-select .preference-5 .field:nth-of-type(4):hover, .js .preference-select .preference-5 .field:nth-of-type(4):focus { border-color: #7dc634; }
+.js .preference-select .preference-5 .field:nth-of-type(4):after { color: #fff; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4) { border-color: #bde396; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4):hover, .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4):focus { border-color: #7dc634; }
 .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4):before { content: ""; }
-.js .preference-select .preference-5 .field:nth-of-type(5) { border-color: #007349; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(4):after { color: #70b22e; }
+.js .preference-select .preference-5 .field:nth-of-type(5) { border-color: #7dc634; }
 .js .preference-select .preference-5 .field:nth-of-type(5):before { content: "5"; }
-.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5) { border-color: #f5fbef; }
+.js .preference-select .preference-5 .field:nth-of-type(5):hover, .js .preference-select .preference-5 .field:nth-of-type(5):focus { border-color: #7dc634; }
+.js .preference-select .preference-5 .field:nth-of-type(5):after { color: #fff; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5) { border-color: #bde396; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5):hover, .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5):focus { border-color: #7dc634; }
 .js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5):before { content: ""; }
+.js .preference-select .preference-5 .not-playing ~ .field:nth-of-type(5):after { color: #70b22e; }
 
-.preference-table .icon-heart { color: #f15051; }
+.preference-table .icon-heart { color: #de347f; }
 .preference-table .icon-check { color: #007349; }
 
 .key { display: none; }
 
-.js .key { *zoom: 1; padding: 15px 10px; margin-bottom: 30px; width: 100%; display: block; background-color: #007349; }
+.js .key { *zoom: 1; padding: 15px 10px; margin-bottom: 30px; width: 100%; display: block; background-color: #c9e9aa; }
 .js .key:before, .js .key:after { content: ""; display: table; }
 .js .key:after { clear: both; }
-.js .key .icon-heart { color: #f15051; }
+.js .key .icon-heart { color: #de347f; }
 .js .key .icon-check { color: #007349; }
 .js .key .icon-up { color: #007349; }
 .js .key dt, .js .key dd { float: left; }

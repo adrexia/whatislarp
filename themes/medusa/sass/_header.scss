@@ -64,6 +64,9 @@
 		@include respond(desktop) {
 			padding-left: 80px;
 		}
+		@include respond(document-width) {
+			padding-left: 30px;
+		}
 		@include respond(large-desktop) {
 			padding-left: 0;
 		}

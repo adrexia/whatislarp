@@ -20,7 +20,7 @@
 			<% else_if $ClassName==GameSignupPage %>
 				<% if $getCurrentRegistration %>
 					<li class="$LinkingMode">
-						<a class="$LinkingModehas-border" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
+						<a class="$LinkingMode has-border" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
 					</li>
 				<% end_if %>
 			<% else %>
