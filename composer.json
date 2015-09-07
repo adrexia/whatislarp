@@ -25,7 +25,8 @@
 		"silverstripe/standardsediting": "dev-master",
 		"jonom/silverstripe-betternavigator": "dev-master",
 		"adrexia/dashboardmods": "dev-master",
-		"sheadawson/silverstripe-linkable": "dev-master"
+		"sheadawson/silverstripe-linkable": "dev-master",
+		"unclecheese/display-logic": "1.2.1"
 	},
 	"config": {
 		"process-timeout": 600

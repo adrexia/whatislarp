@@ -44,9 +44,9 @@
 					<% loop FilteredGames %>
 						<article class="item item-filter $Restriction $Genre <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
 
-							<div class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
+							<a class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
 								<header>
-									<h3 id="ID-{$ID}"><a href="$Top.GameListingPage.Link{$URLSegment}">$Title</a></h3>
+									<h3 id="ID-{$ID}">$Title</h3>
 									<em class="">
 										run by <% if $FacilitatorText %>$FacilitatorText.LowerCase<% else_if MemberName %>$MemberName.LowerCase<% else %>hydra<% end_if %>
 									</em>
@@ -54,7 +54,7 @@
 								<div class="text pvm">
 									<p>$Brief</p>
 								</div>
-							</div>
+							</a>
 						</article>
 					<% end_loop %>
 					</section>

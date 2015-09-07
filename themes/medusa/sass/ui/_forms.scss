@@ -12,11 +12,14 @@ form {
     @include font-size($norm);
     @include adjust-leading-to(1);
     cursor: pointer;
-    margin-bottom: 9px;
+
     &.inline {
       display: inline-block;
       padding-right: 20px;
     }
+  }
+  input {
+    margin-top: 9px;
   }
   dt {
     margin: 0;
@@ -348,22 +351,23 @@ form {
   position: relative;
   width: auto;
   display: inline-block;
-  margin: 0 0 2px 0;
+  margin: 5px 0 2px 0;
   overflow: hidden;
-  border: 1px solid darken($navbar-color, 5%);
+  border: 1px solid darken($global-bg-color, 5%);
   @include border-radius(4px);
   font-family: $font-family;
   font-weight: $font-weight-semibold;
   height: auto;
-  @include background-image(linear-gradient(lighten($navbar-color, 5%), $navbar-color));
+  background: #fff;
   &:after {
     content: "\25BE";
     z-index: 0;
     position:absolute;
-    right: 8%;
+    right: 5%;
     top: 50%;
     margin-top: -12px;
-    color: #fff;
+    color: $navbar-color;
+    font-size: 1.3em;
   }
   &:first-child {
     margin-left: 0;
@@ -375,13 +379,14 @@ form {
     width: 135%;
     height: 34px;
     padding: 6px 45px 6px 15px;
-    color: #fff;
+    color: $navbar-color;
     border: none;
     background: transparent;
     outline: none;
     -webkit-appearance: none;
     z-index: 99;
-        cursor: pointer;
+    cursor: pointer;
+    font-family: $font-family;
     @include font-size($norm);
   }
   select::-ms-expand {

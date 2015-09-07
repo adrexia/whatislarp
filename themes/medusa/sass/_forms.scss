@@ -2,6 +2,12 @@
 	max-width: 98%;
 }
 
+label {	font-family: $header-font-family;}
+
+.extra {
+	color: $navbar-color;
+}
+
 .message {
 	@extend .alert;
 	@extend .info;
@@ -53,7 +59,7 @@ form fieldset legend {
 
 form fieldset.zebra {
 	@include border-radius(3px);
-	margin: 0; 
+	margin: 0;
 	padding: 10px 20px;
 	.field, .composite {
 		border: none;
@@ -71,7 +77,19 @@ fieldset.odd {
 
 input.text, .tagsinput {
 	@extend .input;
+	margin-top: 5px;
+	.btn & {
+		margin-top: 0;
+	}
 }
+
+.composite {
+	&.playing-field {
+		display: none;
+	}
+}
+
+
 
 .field {
 	input.text, .tagsinput {
@@ -145,7 +163,15 @@ input.text, .tagsinput {
 		opacity:0.7;
 	}
 }
+
+.field .radio {
+	margin-left: 0;
+	span {
+		margin-right: 12px;
+	}
+}
 label {
+
 	position:relative;
 	overflow:hidden;
 	&.checkbox {
@@ -175,7 +201,8 @@ label {
 		float:right;
 		width:90%;
 		margin-right:10px;
-		.checkbox {
+		.checkbox,
+		.radio {
 			margin-top: 5px;
 		}
 	}
@@ -190,18 +217,19 @@ label {
 .field {
 	@include clearfix;
 	clear:both;
-	padding:10px 0;
+	padding:15px 0 20px;
 	margin:5px 0 5px 0;
-	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
+	@include doubleborder(bottom, lighten($global-bg-color, 10%), darken($global-bg-color, 10%));
 	.field {
 		border:none;
 		@include box-shadow(none);
 	}
 }
 
-.composite {
-	@include doubleborder(bottom, lighten($global-bg-color, 3%), darken($global-bg-color, 3%));
-	padding: 20px 0;
+.composite,
+.confirmedpassword {
+	@include doubleborder(bottom, lighten($global-bg-color, 10%), darken($global-bg-color, 10%));
+	padding: 15px 0 20px;
 	.field {
 		padding: 5px 0;
 		border: 0; //move border to parent

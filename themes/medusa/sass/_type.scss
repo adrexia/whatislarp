@@ -63,6 +63,7 @@ p {
   @include adjust-leading-to(1);
   &.lead {
     @include font-size(ms(0) * 1.25);
+    font-family: $header-font-family;
     margin-bottom: ms(1);
   }
   @include respond(portrait-tablets) {

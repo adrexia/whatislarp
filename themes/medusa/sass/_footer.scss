@@ -19,6 +19,7 @@
 	}
 
 	.navbar {
+		@include clearfix();
 		min-height: 25px;
 		padding: 0 20px;
 		margin: 0;
@@ -27,11 +28,18 @@
 			margin-top: 90px;
 		}
 		ul {
+			clear:both;
 			float:left;
 			margin-left:-15px;
 			a {
-				color: $body-link-color;
+				color: #fff;
 				font-size: 0.9em;
+			}
+		}
+		> a {
+			font-size: 1.3em;
+			&:hover, &:focus {
+				color: rgba(#fff, 0.7);
 			}
 		}
 	}

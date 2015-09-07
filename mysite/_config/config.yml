@@ -11,6 +11,12 @@ SSViewer:
 SiteConfig:
   extensions:
    - CustomSiteConfig
+Registration:
+  extensions:
+   - RegistrationExtension
+RegistrationPage_Controller:
+  extensions:
+   - RegistrationPage_ControllerExtension
 DBField:
   extensions:
    - RichLinksExtension

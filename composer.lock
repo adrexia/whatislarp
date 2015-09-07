@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff2dd071189674064d4747fc2fa529c1",
+    "hash": "0d46037575df1b39cb26d053f1064426",
     "packages": [
         {
             "name": "adrexia/dashboardmods",

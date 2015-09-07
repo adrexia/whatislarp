@@ -25150,7 +25150,7 @@ $(function() {
 
 		$(".tag-field.genre input").tagsInput({
 			autocomplete: {
-				delay: 0, 
+				delay: 0,
 				minLength: 1,
 				source: $('.genre-list').text().split(","),
 				autoFill:true,
@@ -25227,7 +25227,7 @@ $(function() {
 	// Customize validation for user forms. Accessibility fixes
 	var siteForm = $('.UserDefinedForm #Form_Form');
 	if (siteForm.length > 0) {
-			
+
 			// Set up validation.
 			siteForm.validate({
 					errorPlacement: function(error, element) {
@@ -25249,7 +25249,6 @@ $(function() {
 	}
 
 });
-
 ;/*jslint browser: true*/
 /*global $, jQuery*/
 
