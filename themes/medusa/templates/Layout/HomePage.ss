@@ -22,7 +22,7 @@
 			<section class="pagination-content">
 			<% loop News %>
 				<article class="$EvenOdd row $FirstLast">
-					<p class="meta-info two columns">
+					<p class="meta-info three columns">
 						<em>
 							<time datetime="$Created">$Created.Format(d M Y)</time>
 						</em>
@@ -31,7 +31,7 @@
 						</span>
 
 					</p>
-					<div class="columns ten">
+					<div class="columns nine">
 						<header>
 							<h3 id="ID-{$ID}">$Title</h3>
 						</header>
