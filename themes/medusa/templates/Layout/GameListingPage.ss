@@ -44,7 +44,7 @@
 					<% loop FilteredGames %>
 						<article class="item item-filter $Restriction $Genre <% if $Session == 0 %>to-be-scheduled<% else %>round-{$Session}<% end_if %>">
 
-							<a class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
+							<a href="$Link" class="item-wrap alpha-change-border $Genre.LimitCharacters(1,'').LowerCase">
 								<header>
 									<h3 id="ID-{$ID}">$Title</h3>
 									<em class="">
