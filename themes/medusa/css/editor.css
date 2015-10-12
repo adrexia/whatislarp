@@ -1434,8 +1434,8 @@ table caption { text-align: center; font-size: 29.79335px; padding: .75em; }
 table thead th, table tbody td, table tr th, table tr td { display: table-cell; padding: 10px; vertical-align: top; text-align: left; border-top: 1px solid #f0f9e6; }
 table tr td, table tbody tr td { font-size: 16px; }
 @media only screen and (max-width: 899px) { table tr td, table tbody tr td { font-size: 13.88854px; } }
-table tr td:first-child, table tr th:first-child { font-weight: bold; }
-@media only screen and (max-width: 899px) { table tr td:first-child, table tr th:first-child { font-size: 11.88854px; } }
+table tr th:first-child { font-weight: bold; }
+@media only screen and (max-width: 899px) { table tr th:first-child { font-size: 11.88854px; } }
 table thead { background-color: #cceaae; color: #333333; }
 table thead tr th { font-size: 16px; font-weight: bold; vertical-align: bottom; }
 table.striped tr:nth-of-type(even), table table tr.stripe, table table tr.striped { background-color: #d6eebe; }

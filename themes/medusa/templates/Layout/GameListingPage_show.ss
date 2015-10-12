@@ -55,6 +55,7 @@
 					</tbody>
 				</table>
 				<% if $showEditLink %>
+
 					<% if $getEditLink %>
 					<span class="btn metro rounded medium success">
 						<a href="$getEditLink">
@@ -62,6 +63,32 @@
 						</a>
 					</span>
 					<% end_if %>
+
+					<% if $Players() %>
+					<hr />
+					<h3 class="ptxl">Current Players</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% loop $Players() %>
+							<tr>
+								<td>$MemberName</td>
+								<td>$MemberEmail</td>
+							</tr>
+							<% end_loop %>
+						</tbody>
+					</table>
+					<p><em>Player details are only available to the game facilitator &amp; website admins.
+						Please respect the privacy of your players.</em></p> <br />
+
+					<% end_if %>
+
+
 				<% end_if %>
 			</div>
 		</article>

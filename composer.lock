@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0d46037575df1b39cb26d053f1064426",
+    "hash": "2a68daf8bab9059c171276977170683d",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -42,12 +42,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/adrexia/silverstripe-gamesevent.git",
-                "reference": "485b7ff2d049223c9038fd5f9bc55bc1ec68a31e"
+                "reference": "dd3ad87770bf5c5c4b4990a7405ecd83eb93df46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/485b7ff2d049223c9038fd5f9bc55bc1ec68a31e",
-                "reference": "485b7ff2d049223c9038fd5f9bc55bc1ec68a31e",
+                "url": "https://api.github.com/repos/adrexia/silverstripe-gamesevent/zipball/dd3ad87770bf5c5c4b4990a7405ecd83eb93df46",
+                "reference": "dd3ad87770bf5c5c4b4990a7405ecd83eb93df46",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
             "keywords": [
                 "silverstripe"
             ],
-            "time": "2015-02-15 07:00:17"
+            "time": "2015-10-12 06:44:03"
         },
         {
             "name": "ajshort/silverstripe-memberprofiles",
@@ -357,12 +357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sheadawson/silverstripe-linkable.git",
-                "reference": "ad7611caf16d57dddb1ac09da1cf02f53bb81221"
+                "reference": "4bf7af6c0618e64aa36996b8c01c4058a53bf14c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/ad7611caf16d57dddb1ac09da1cf02f53bb81221",
-                "reference": "ad7611caf16d57dddb1ac09da1cf02f53bb81221",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-linkable/zipball/4bf7af6c0618e64aa36996b8c01c4058a53bf14c",
+                "reference": "4bf7af6c0618e64aa36996b8c01c4058a53bf14c",
                 "shasum": ""
             },
             "require": {
@@ -397,20 +397,20 @@
                 "link",
                 "silverstripe"
             ],
-            "time": "2015-08-31 20:46:01"
+            "time": "2015-10-07 04:04:52"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
-            "version": "1.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "302f7c0dc1ca929d7aa001453eaa16491afd4d5b"
+                "reference": "1d25be7bdd286e589370f82f0526a309ddf226e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/302f7c0dc1ca929d7aa001453eaa16491afd4d5b",
-                "reference": "302f7c0dc1ca929d7aa001453eaa16491afd4d5b",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/1d25be7bdd286e589370f82f0526a309ddf226e0",
+                "reference": "1d25be7bdd286e589370f82f0526a309ddf226e0",
                 "shasum": ""
             },
             "require": {
@@ -422,6 +422,9 @@
             "type": "silverstripe-module",
             "extra": {
                 "installer-name": "gridfieldextensions",
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                },
                 "screenshots": [
                     "docs/en/_images/editable-rows.png",
                     "docs/en/_images/add-existing-search.png"
@@ -442,12 +445,12 @@
                 }
             ],
             "description": "A collection of useful grid field components",
-            "homepage": "http://github.com/ajshort/silverstripe-gridfieldextensions",
+            "homepage": "http://github.com/silverstripe-australia/silverstripe-gridfieldextensions",
             "keywords": [
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-03-04 01:28:24"
+            "time": "2015-10-08 00:29:57"
         },
         {
             "name": "silverstripe/cms",
@@ -986,22 +989,22 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "dev-master",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "d53a66353b3f19c8f4d1ce701b38fecebd0c7170"
+                "reference": "606b20bf7206fac684d7c65a24e3897a4d64f740"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/d53a66353b3f19c8f4d1ce701b38fecebd0c7170",
-                "reference": "d53a66353b3f19c8f4d1ce701b38fecebd0c7170",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/606b20bf7206fac684d7c65a24e3897a4d64f740",
+                "reference": "606b20bf7206fac684d7c65a24e3897a4d64f740",
                 "shasum": ""
             },
             "require": {
-                "silverstripe-australia/gridfieldextensions": "1.1.0",
-                "silverstripe/cms": ">=3.1.0",
-                "silverstripe/framework": ">=3.1.0",
+                "silverstripe-australia/gridfieldextensions": "~1.1",
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1",
                 "silverstripe/segment-field": "^1.0"
             },
             "suggest": {
@@ -1020,8 +1023,24 @@
             ],
             "authors": [
                 {
+                    "name": "David Craig",
+                    "email": "david@silverstripe.com"
+                },
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                },
+                {
                     "name": "Will Rossiter",
                     "email": "will@fullscreen.io"
+                },
+                {
+                    "name": "Christopher Pitt",
+                    "email": "chris@silverstripe.com"
+                },
+                {
+                    "name": "Scott Hutchinson",
+                    "email": "scott@silverstripe.com"
                 }
             ],
             "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
@@ -1029,7 +1048,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2015-09-02 00:55:12"
+            "time": "2015-09-20 21:10:28"
         },
         {
             "name": "unclecheese/betterbuttons",
@@ -1120,7 +1139,6 @@
         "unclecheese/betterbuttons": 20,
         "silverstripe/dashboard": 20,
         "adrexia/gamesevent": 20,
-        "silverstripe/userforms": 20,
         "silverstripe/standardsediting": 20,
         "jonom/silverstripe-betternavigator": 20,
         "adrexia/dashboardmods": 20,
