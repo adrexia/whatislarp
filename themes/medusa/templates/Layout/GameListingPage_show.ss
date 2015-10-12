@@ -64,7 +64,7 @@
 					</span>
 					<% end_if %>
 
-					<% if $Players() %>
+					<% if $CurrentPlayers() %>
 					<hr />
 					<h3 class="ptxl">Current Players</h3>
 					<table>
@@ -75,7 +75,7 @@
 							</tr>
 						</thead>
 						<tbody>
-						<% loop $Players() %>
+						<% loop $CurrentPlayers() %>
 							<tr>
 								<td>$MemberName</td>
 								<td>$MemberEmail</td>
