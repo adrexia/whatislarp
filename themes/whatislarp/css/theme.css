@@ -277,7 +277,7 @@ h2 .date { color: #FF0000; }
 ul.slides { padding: 0; margin: 0; list-style: none; }
 ul.slides li { padding-bottom: 0; }
 ul.slides img { padding: 0; border: 0; float: left; display: block; width: 100%; }
-ul.slides a:focus img, ul.slides a:hover img { opacity: 0.8; }
+ul.slides a:focus img, ul.slides a:hover img { opacity: 0.6; }
 
 .flexslider { margin: 0; padding: 0; overflow: hidden; }
 .flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; }
