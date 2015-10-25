@@ -20,6 +20,7 @@ class HomePage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->removeByName('Sidebar');
+		$fields->removeByName('PromotionalBanners');
 
 		$fields->insertBefore(UploadField::create('FeatureImage', 'Feature Image'), 'Content');
 
