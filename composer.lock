@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e52bc78d93cb2cc22799d0d5d1487f05",
-    "content-hash": "915ca3fc5542b2333bcaaa487532cb9b",
+    "hash": "716c61297e44c4f55227336921590e7a",
+    "content-hash": "7ac31d322c618fd9245b54437a750d07",
     "packages": [
         {
             "name": "adrexia/dashboardmods",
@@ -221,45 +221,6 @@
                 "silverstripe"
             ],
             "time": "2015-07-31 16:01:03"
-        },
-        {
-            "name": "mateusz/frontend",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mateusz/silverstripe-frontend.git",
-                "reference": "32355af5d78c93fffae0a2151b8798c776f4ff30"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mateusz/silverstripe-frontend/zipball/32355af5d78c93fffae0a2151b8798c776f4ff30",
-                "reference": "32355af5d78c93fffae0a2151b8798c776f4ff30",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "~3.1"
-            },
-            "replace": {
-                "silverstripe/frontend": "*"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mateusz Uzdowski",
-                    "email": "mateusz@silverstripe.com"
-                }
-            ],
-            "description": "Provides frontend widgets that nicely integrate with a SilverStripe site.",
-            "keywords": [
-                "frontend",
-                "silverstripe",
-                "widgets"
-            ],
-            "time": "2013-08-25 20:49:47"
         },
         {
             "name": "sheadawson/silverstripe-linkable",
@@ -1138,7 +1099,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mateusz/frontend": 20,
         "unclecheese/betterbuttons": 20,
         "silverstripe/dashboard": 20,
         "silverstripe/standardsediting": 20,
