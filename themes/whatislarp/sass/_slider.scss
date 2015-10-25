@@ -17,12 +17,17 @@ ul.slides{
 	li {
 		padding-bottom:0;
 	}
-	img{
+	img {
 		padding:0;
 		border:0;
 		float:left;
 		display:block;
 		width:100%;
+	}
+	a:focus, a:hover {
+		img {
+			opacity: 0.6;
+		}
 	}
 }
 
