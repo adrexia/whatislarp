@@ -35,7 +35,7 @@ class PromotionalBanner extends DataObject {
 		$altText->setDescription("e.g. Sign up now!");
 
 		$fields->addFieldToTab('Root.Main', $group = new CompositeField(
-			$label = new LabelField("LabelArchive","Archive this slider item?"),
+			$label = new LabelField("LabelArchive","Archive this promotional item?"),
 			new CheckboxField('Archived', '')
 		));
 
