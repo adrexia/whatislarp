@@ -1,0 +1,2 @@
+$BetterNavigator
+<% include Navigation %>

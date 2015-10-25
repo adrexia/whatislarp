@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import "theme";
+
+body {
+	padding: 10px;
+	background: #fff;
+}
+
+table {
+	color: #fff; //overridden but needed for editor.
+	td {
+		color: #fff; //overridden but needed for editor.
+	}
+}

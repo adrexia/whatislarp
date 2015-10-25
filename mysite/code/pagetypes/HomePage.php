@@ -5,49 +5,31 @@ class HomePage extends Page {
 	public $pageIcon = "mysite/images/sitetree_images/home.png";
 
 	private static $db = array(
-		'Sidebar' => 'HTMLText'
+
+	);
+
+	private static $has_one = array(
+		'FeatureImage' => 'Image',
 	);
 
 	private static $has_many = array(
-		'SliderItems' => 'SliderItem',
-		'NewsItems' => 'NewsItem',
-		'SponsorLinks' => 'Link'
+		'SliderItems' => 'SliderItem'
 	);
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
 
-		$fields->insertAfter(new HTMLEditorField('Sidebar', 'Sidebar Content'),'Content');
+		$fields->removeByName('Sidebar');
 
-		$gridField = new GridField(
-			'SponsorLinks',
-			'SponsorLinks',
-			$this->SponsorLinks()->sort(array('Sort'=>'ASC')),
-			$config = GridFieldConfig_RelationEditor::create()
-		);
-		$gridField->setModelClass('Link');
-		$fields->addFieldToTab('Root.SponsorLinks', $gridField);
-		$config->addComponent(new GridFieldOrderableRows());
+		$fields->insertBefore(UploadField::create('FeatureImage', 'Feature Image'), 'Content');
 
-
-		$gridField = new GridField(
-			'NewsItems',
-			'NewsItems',
-			$this->NewsItems()->sort(array('Sort'=>'ASC','Archived'=>'ASC')),
-			$config = GridFieldConfig_RelationEditor::create()
-		);
-		$gridField->setModelClass('NewsItem');
-		$fields->addFieldToTab('Root.News', $gridField);
-		$config->addComponent(new GridFieldOrderableRows());
-
-
-		// Carousel tab
+		// Slider tab
 		$gridField = new GridField(
 			'SliderItems',
 			'Slider',
 			$this->SliderItems()->sort(array('Sort'=>'ASC','Archived'=>'ASC')),
-			$sliderConf =GridFieldConfig_RelationEditor::create());
-			
+			$sliderConf = GridFieldConfig_RelationEditor::create());
+
 		$gridField->setModelClass('SliderItem');
 		$fields->addFieldToTab('Root.Slider', $gridField);
 		$sliderConf->addComponent(new GridFieldOrderableRows());

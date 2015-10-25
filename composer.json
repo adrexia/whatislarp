@@ -6,11 +6,8 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.1.11",
 		"silverstripe/framework": "3.1.11",
-		"mateusz/frontend": "dev-master",
-		"ajshort/silverstripe-memberprofiles": "0.4",
 		"unclecheese/betterbuttons": "dev-master",
 		"silverstripe/dashboard": "dev-master",
-		"adrexia/gamesevent": "dev-master",
 		"silverstripe/userforms": "3.0.2",
 		"silverstripe/html5": "1.0.3",
 		"silverstripe/iframe": "1.0.7",
@@ -25,7 +22,8 @@
 		"jonom/silverstripe-betternavigator": "dev-master",
 		"adrexia/dashboardmods": "dev-master",
 		"sheadawson/silverstripe-linkable": "dev-master",
-		"unclecheese/display-logic": "1.2.1"
+		"unclecheese/display-logic": "1.2.1",
+		"studiobonito/silverstripe-spamprotection-honeypot": "1.1.0"
 	},
 	"config": {
 		"process-timeout": 600
