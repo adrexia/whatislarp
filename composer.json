@@ -22,7 +22,7 @@
 		"jonom/silverstripe-betternavigator": "dev-master",
 		"adrexia/dashboardmods": "dev-master",
 		"sheadawson/silverstripe-linkable": "dev-master",
-		"unclecheese/display-logic": "1.2.1",
+		"unclecheese/display-logic": "1.3.2",
 		"studiobonito/silverstripe-spamprotection-honeypot": "1.1.2"
 	},
 	"config": {
